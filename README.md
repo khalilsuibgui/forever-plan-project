@@ -1,4 +1,8 @@
-# ForeverPlan
+<<<<<<< HEAD
+... ton contenu local ...
+=======
+... contenu venant de GitHub ...
+>>>>>>> ...# ForeverPlan
 
 
 
@@ -91,3 +95,6 @@ Backend tests:
 cd backend
 mvn test
 ```
+=======
+# forever-plan-project
+>>>>>>> bfac4bd04e049fb7e7ecbe21cf714334221887e2
