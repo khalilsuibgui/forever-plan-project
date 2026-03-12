@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-... ton contenu local ...
-=======
-... contenu venant de GitHub ...
->>>>>>> ...# ForeverPlan
 
 
 
