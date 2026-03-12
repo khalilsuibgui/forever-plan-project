@@ -1,0 +1,44 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  background: url('/assets/hero-bg.jpg') center/cover no-repeat;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.hero h2 {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  max-width: 600px;
+  margin: 0;
+}
+
+.cta-btn {
+  position: relative;
+  z-index: 1;
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: var(--color-primary-gold);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 999px;
+  transition: background-color 0.2s;
+}
+
+.cta-btn:hover {
+  background-color: var(--color-primary-gold-dark, #c29c2b);
+}

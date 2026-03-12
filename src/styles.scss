@@ -1,0 +1,49 @@
+
+/* src/styles.scss */
+/* -------------- color palette (also exposed as custom properties) -------------- */
+:root {
+  --color-primary-gold: #D4AF37;
+  --color-blush-light: #fff0f0;
+  --color-blush-medium: #E3B7B7;
+  --color-taupe: #B89C8E;
+  --color-text-main: #5C4033;
+  --font-sans: 'Montserrat', 'Arial', sans-serif;
+  --font-serif: 'Georgia', serif;
+}
+
+$color-primary-gold: var(--color-primary-gold);
+$color-blush-light: var(--color-blush-light);
+$color-blush-medium: var(--color-blush-medium);
+$color-taupe: var(--color-taupe);
+$color-text-main: var(--color-text-main);
+
+/* global resets and typography */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: #ffffff;
+  color: $color-text-main;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  margin: 0 0 0.5rem 0;
+  line-height: 1.25;
+}
+
+a {
+  color: $color-primary-gold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+      

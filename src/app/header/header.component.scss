@@ -1,0 +1,107 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--color-blush-light);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 0;
+  transition: padding 0.3s ease;
+  
+  /* Modern CSS Scroll Animation */
+  animation: shrink-header linear both;
+  animation-timeline: scroll();
+  animation-range: 0 150px; /* Shrink completes after 150px of scrolling */
+}
+
+/* Define the shrink animation */
+@keyframes shrink-header {
+  to {
+    padding: 0.5rem 0;
+  }
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* This brings them closer together */
+  text-decoration: none;
+}
+
+.logo {
+  max-width: 80px; /* Smaller starting size */
+  height: auto;
+  animation: shrink-logo linear both;
+  animation-timeline: scroll();
+  animation-range: 0 150px;
+}
+
+@keyframes shrink-logo {
+  to { max-width: 50px; }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--color-text-main);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary-gold);
+  transition: width 0.2s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+/*
+.site-header .logo {
+  max-width: 120px;
+}
+*/
+.title-group {
+  text-align: left; /* Aligns text next to logo */
+}
+
+.title-group h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--color-primary-gold, #d4af37);
+  line-height: 1;
+}
+
+
+.site-header h1 {
+  margin: 0.25rem 0;
+  color: var(--color-primary-gold);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+}

@@ -1,0 +1,15 @@
+<section id="portfolio" class="packages">
+  <h3>Featured Packages</h3>
+  <div class="package-list">
+    <div class="package-card" *ngFor="let item of packages">
+      <h4>{{ item.title }}</h4>
+      <div class="divider"></div>
+      <p class="description">{{ item.price }} - {{ item.description }}</p>
+
+      <div class="card-footer">
+        <a href="#" class="btn-text">Discover more <span>v</span></a>
+        <button class="btn-outline">REQUEST A QUOTE</button>
+      </div>
+    </div>
+  </div>
+</section>

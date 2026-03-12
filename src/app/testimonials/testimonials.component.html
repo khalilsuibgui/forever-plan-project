@@ -1,0 +1,9 @@
+<section class="testimonials">
+  <h3>What Our Clients Say</h3>
+  <div class="testimonial" *ngFor="let item of testimonials">
+    <p>"{{ item.message }}"</p>
+    <span>
+      - {{ item.name }}<span *ngIf="item.role">, {{ item.role }}</span>
+    </span>
+  </div>
+</section>
